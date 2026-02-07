@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="5dp" app:strokeColor="@color/colorPrimary" app:strokeWidth="2dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="@dimen/_150sdp" android:src="@color/black" android:scaleType="fitXY"/>
+        <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" android:id="@+id/title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp" android:maxLines="1" android:textAlignment="center"/>
+        <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" android:id="@+id/message_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:textAlignment="center"/>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_5sdp">
+            <Button android:textColor="@color/colorPrimary" android:id="@+id/btn_ban" android:focusable="true" android:nextFocusDown="@+id/btn_cancel" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dsa" style="?attr/buttonBarNeutralButtonStyle"/>
+            <Button android:textColor="@color/colorPrimary" android:id="@+id/btn_cancel" android:focusable="true" android:nextFocusDown="@+id/btn_ok" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_marginEnd="@dimen/_3sdp" style="?attr/buttonBarNegativeButtonStyle"/>
+            <Button android:textColor="@color/colorPrimary" android:id="@+id/btn_ok" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" style="?attr/buttonBarPositiveButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
